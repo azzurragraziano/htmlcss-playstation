@@ -27,6 +27,41 @@ a
     color: inherit;
 }
 
+.games_list
+{
+    margin: 3rem 0;
+}
+
+/* banner */
+.banner_content
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_logo_image
+{
+    width: 300px;
+}
+
+.banner_text
+{
+    padding: 2.5rem 0 2rem;
+}
+
+.banner_text>p
+{
+    padding: 2rem 0 1.3rem;
+}
+
+.btn_orange
+{
+    color: #fff;
+    background-color: #cd3d0f;
+    border-color: #cd3d0f;
+}
+
 /* HEADER */
 header
 {
@@ -49,7 +84,6 @@ header
 /* header bottom */
 .header_bottom
 {
-    background-color: lightblue;
     padding: 1rem 1.5rem;
 }
 
@@ -83,43 +117,123 @@ header
     background-position: center;
 }
 
-.jumbotron_content
+.ms_jumbotron .banner_content
 {
-    color: white;
     height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+}
+/* games_list */
+.games_list .col>img
+{
+    border-radius: 20px;
 }
 
-.returnal_image
+.games_list .col:first-child>img
 {
-    width: 300px;
+    border: 3px solid blue;
+    padding: 2px;
 }
 
-.jumbo_text
+/* playstation 5 */
+.ps_5
 {
-    padding: 2.5rem 0 2rem;
+    padding-top: 4rem;
 }
 
-.jumbo_text>p
+.ps_5>h4
 {
-    padding: 2rem 0 1.3rem;
+    color: #3790d8;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
-.btn_orange
+.ps_5>h2
 {
-    color: #fff;
-    background-color: #cd3d0f;
-    border-color: #cd3d0f;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.ps_5>p
+{
+    color: gray;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* accessories */
+.accessories .ms_card:not(.ps5)
+{
+    opacity: 0.5;
+}
+
+.image_card
+{
+    padding: 4rem;
+    padding-bottom: 0.5rem;
+}
+
+.text_card
+{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.ms_card
+{
+    padding-bottom: 4rem;
+}
+
+.ms_card.ps5
+{
+    border-bottom: 2px solid #0d6efd;;
+}
+
+/* it takes two banner */
+.it_takes_two
+{
+    height: 650px;
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.it_takes_two .banner_content
+{
+    height: 650px;
+}
+
+@media  screen and (min-width: 576px) 
+{
+    /* accessories */
+    .image_card
+    {
+        padding: 1rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media  screen and (min-width: 768px) 
+{
+    /* accessories */
+    .image_card
+    {
+        padding: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
 }
 
 @media  screen and (min-width: 992px) 
 {
 
     /* jumbotron */
-    .jumbo_text
+    .banner_text
     {
         width: 30%;
+    }
+
+    /* accessories */
+    .image_card
+    {
+        padding: 2.5rem;
+        padding-bottom: 0.5rem;
     }
 }
