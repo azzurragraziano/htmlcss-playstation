@@ -1,0 +1,65 @@
+/* COMMON */
+img
+{
+    width: 100%;
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+/* header top */
+.header_top
+{
+    background-color: black;
+    text-align: right;
+}
+
+.header_top>img
+{
+    width: 150px;
+    padding: 0.8rem 1.5rem;
+}
+
+/* header bottom */
+.header_bottom
+{
+    background-color: lightblue;
+    padding: 1rem 1.5rem;
+}
+
+.user_area
+{
+    text-align: right;
+}
+
+.burger
+{
+    font-size: 2rem;
+}
+
+.chevron
+{
+    width: 10px;
+}
+
+.lens
+{
+    width: 25px;
+}
