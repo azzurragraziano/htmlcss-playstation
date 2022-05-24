@@ -165,19 +165,19 @@ header
     opacity: 0.5;
 }
 
-.image_card
+.accessories .image_card
 {
     padding: 4rem;
     padding-bottom: 0.5rem;
 }
 
-.text_card
+.accessories .text_card
 {
     font-size: 1.3rem;
     text-align: center;
 }
 
-.ms_card
+.accessories .ms_card
 {
     padding-bottom: 4rem;
 }
@@ -201,10 +201,38 @@ header
     height: 650px;
 }
 
+/* new releases */
+.new_releases
+{
+    color: white;
+    background-color: #1f1f1f;
+    padding: 2rem;
+}
+
+.new_releases .text_card
+{
+    font-size: 1rem;
+}
+
+.new_releases h2
+{
+    font-size: 2rem;
+}
+
+.new_releases p
+{
+    font-size: 1.8rem;
+}
+
+.new_releases .image_card>img
+{
+    border-radius: 20px;
+}
+
 @media  screen and (min-width: 576px) 
 {
     /* accessories */
-    .image_card
+    .accessories .image_card>img
     {
         padding: 1rem;
         padding-bottom: 0.5rem;
@@ -214,7 +242,7 @@ header
 @media  screen and (min-width: 768px) 
 {
     /* accessories */
-    .image_card
+    .accessories .image_card
     {
         padding: 1.5rem;
         padding-bottom: 0.5rem;
@@ -231,7 +259,7 @@ header
     }
 
     /* accessories */
-    .image_card
+    .accessories .image_card
     {
         padding: 2.5rem;
         padding-bottom: 0.5rem;
