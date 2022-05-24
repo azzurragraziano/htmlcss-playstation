@@ -134,28 +134,28 @@ header
 }
 
 /* playstation 5 */
-.ps_5
+.ps
 {
     padding-top: 4rem;
 }
 
-.ps_5>h4
+.ps>h4
 {
     color: #3790d8;
     text-transform: uppercase;
     font-size: 1rem;
 }
 
-.ps_5>h2
+.ps>h2
 {
     font-size: 2.5rem;
     padding-bottom: 1.5rem;
 }
 
-.ps_5>p
+.ps>p
 {
     color: gray;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-bottom: 1rem;
 }
 
@@ -229,6 +229,89 @@ header
     border-radius: 20px;
 }
 
+/* playstation 4 */
+.playstation_4 
+{
+    padding: 2rem;
+}
+
+.playstation_4 .text_card h5
+{
+    font-size: 1.7rem;
+}
+
+.playstation_4 .text_card p
+{
+    color: gray;
+}
+
+/* playstation plus */
+.playstation_plus
+{
+    background-color: #bebcbb;
+    padding: 2rem 0;
+}
+
+.ps_plus>img
+{
+    display: block;
+}
+
+.playstation_plus .banner_text
+{
+    color: black;
+    padding: 0;
+}
+
+.btn_beige
+{
+    color: #386ce5;
+    background-color: #d9dadc;
+    border-color: #d9dadc;
+}
+
+/* sales */
+.new_sales
+{
+    padding-bottom: 2rem;
+}
+
+/* playstation now */
+.playstation_now
+{
+    background-color: #161c3b;
+    padding: 2rem 0;
+}
+
+.playstation_now .banner_text
+{
+    padding: 0;
+}
+
+/* socials */
+.socials
+{
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.socials ul
+{
+    padding-top: 4rem;
+}
+
+.socials li>img
+{
+    width: 100px;
+}
+
+/* FOOTER */
+footer
+{
+    background-color: #00439c;
+    color: white;
+}
+
 @media  screen and (min-width: 576px) 
 {
     /* accessories */
@@ -247,6 +330,19 @@ header
         padding: 1.5rem;
         padding-bottom: 0.5rem;
     }
+
+    /* banner */
+    .playstation_plus,
+    .playstation_now
+    {
+        padding: 0;
+    }
+
+    .playstation_plus .banner_logo_image,
+    .playstation_now .banner_logo_image
+    {
+        width: 200px;
+    }
 }
 
 @media  screen and (min-width: 992px) 
@@ -264,4 +360,19 @@ header
         padding: 2.5rem;
         padding-bottom: 0.5rem;
     }
+
+    /* playstation plus */
+
+    .playstation_plus .banner_text,
+    .playstation_now .banner_text
+    {
+        width: auto;
+    }
+
+    .playstation_plus .banner_logo_image
+    .playstation_now .banner_logo_image
+    {
+        width: 300px;
+    }
+
 }
