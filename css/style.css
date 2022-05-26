@@ -160,6 +160,11 @@ header
     border-radius: 20px;
 }
 
+.games_list .col>img:hover
+{
+    transform: translateY(-15px);
+}
+
 .games_list .col:first-child>img
 {
     border: 3px solid blue;
@@ -218,6 +223,12 @@ header
 .ms_card.ps5
 {
     border-bottom: 2px solid #0d6efd;;
+}
+
+.accessories .ms_card:hover
+{
+    opacity: 1;
+    border-bottom: 2px solid #0d6efd;
 }
 
 /* it takes two banner */
