@@ -179,7 +179,7 @@ header
 
 .accessories .ms_card
 {
-    padding-bottom: 4rem;
+    height: 100%
 }
 
 .ms_card.ps5
@@ -194,6 +194,7 @@ header
     background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
     background-size: cover;
     background-position: center;
+    margin-top: 3rem;
 }
 
 .it_takes_two .banner_content
@@ -295,14 +296,9 @@ header
     text-align: center;
 }
 
-.socials ul
+.socials h2
 {
-    padding-top: 4rem;
-}
-
-.socials li>img
-{
-    width: 100px;
+    padding-bottom: 2.5rem;
 }
 
 /* FOOTER */
@@ -310,6 +306,47 @@ footer
 {
     background-color: #00439c;
     color: white;
+}
+
+/* footer top */
+.footer_top
+{
+    padding: 3rem 0 ;
+}
+
+.ps_footer
+{
+    width: 80px;
+}
+
+.footer_top .col>ul
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer-bottom */
+.sie_logo
+{
+    width: 150px;
+}
+
+.language_globe
+{
+    width: 20px;
+    display: inline-block;
+    vertical-align: sub;
+    padding-top: 2rem;
+}
+
+.footer_bottom .footer_text
+{
+    padding: 1rem 0 4rem;
+}
+
+.footer_bottom .footer_text span
+{
+    text-decoration: underline;
 }
 
 @media  screen and (min-width: 576px) 
@@ -343,6 +380,12 @@ footer
     {
         width: 200px;
     }
+
+    /* socials */
+    .socials .col
+    {
+        width: 100px;
+    }
 }
 
 @media  screen and (min-width: 992px) 
@@ -375,4 +418,9 @@ footer
         width: 300px;
     }
 
+    /* FOOTER */
+    .footer_bottom .footer_text
+    {
+        width: 50%;
+    }
 }
