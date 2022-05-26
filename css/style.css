@@ -27,12 +27,38 @@ a
     color: inherit;
 }
 
-.games_list
+.playstation_5, .ps_5_console,
+.playstation_4, .new_sales
 {
-    margin: 3rem 0;
+    padding-top: 4rem;
 }
 
-/* banner */
+/* banner with bg-image */
+.jumbo_content
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbo_text
+{
+    padding: 2.5rem 0 2rem;
+}
+
+.jumbo_text>p
+{
+    padding: 2rem 0 1.3rem;
+} 
+
+.btn_orange
+{
+    color: #fff;
+    background-color: #cd3d0f;
+    border-color: #cd3d0f;
+}
+
+/* banner with 2 cols */
 .banner_content
 {
     color: white;
@@ -45,14 +71,15 @@ a
     width: 300px;
 }
 
-.banner_text
-{
-    padding: 2.5rem 0 2rem;
-}
-
 .banner_text>p
 {
     padding: 2rem 0 1.3rem;
+}
+
+.ps_plus,
+.ps_now
+{
+    display: block;
 }
 
 .btn_orange
@@ -117,10 +144,16 @@ header
     background-position: center;
 }
 
-.ms_jumbotron .banner_content
+.ms_jumbotron .jumbo_content
 {
     height: 550px;
 }
+
+.ms_jumbotron .jumbo_logo_image
+{
+    width: 300px;
+}
+
 /* games_list */
 .games_list .col>img
 {
@@ -133,12 +166,12 @@ header
     padding: 2px;
 }
 
-/* playstation 5 */
-.ps
+.games_list
 {
-    padding-top: 4rem;
+    margin: 3rem 0 1rem;
 }
 
+/* playstation 5 */
 .ps>h4
 {
     color: #3790d8;
@@ -197,9 +230,14 @@ header
     margin-top: 3rem;
 }
 
-.it_takes_two .banner_content
+.it_takes_two .jumbo_content
 {
     height: 650px;
+}
+
+.it_takes_two .jumbo_logo_image
+{
+    width: 200px;
 }
 
 /* new releases */
@@ -236,11 +274,6 @@ header
     padding: 2rem;
 }
 
-.playstation_4 .text_card h5
-{
-    font-size: 1.7rem;
-}
-
 .playstation_4 .text_card p
 {
     color: gray;
@@ -253,15 +286,9 @@ header
     padding: 2rem 0;
 }
 
-.ps_plus>img
-{
-    display: block;
-}
-
 .playstation_plus .banner_text
 {
     color: black;
-    padding: 0;
 }
 
 .btn_beige
@@ -282,11 +309,6 @@ header
 {
     background-color: #161c3b;
     padding: 2rem 0;
-}
-
-.playstation_now .banner_text
-{
-    padding: 0;
 }
 
 /* socials */
@@ -344,7 +366,7 @@ footer
     padding: 1rem 0 4rem;
 }
 
-.footer_bottom .footer_text span
+.footer_text a
 {
     text-decoration: underline;
 }
@@ -368,7 +390,7 @@ footer
         padding-bottom: 0.5rem;
     }
 
-    /* banner */
+    /* banner with 2 cols */
     .playstation_plus,
     .playstation_now
     {
@@ -390,9 +412,8 @@ footer
 
 @media  screen and (min-width: 992px) 
 {
-
-    /* jumbotron */
-    .banner_text
+    /* banner with bg-image*/
+    .jumbo_text
     {
         width: 30%;
     }
@@ -404,14 +425,7 @@ footer
         padding-bottom: 0.5rem;
     }
 
-    /* playstation plus */
-
-    .playstation_plus .banner_text,
-    .playstation_now .banner_text
-    {
-        width: auto;
-    }
-
+    /* banner with 2 cols */
     .playstation_plus .banner_logo_image
     .playstation_now .banner_logo_image
     {
