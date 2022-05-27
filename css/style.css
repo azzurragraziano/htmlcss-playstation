@@ -33,6 +33,12 @@ a
     padding-top: 4rem;
 }
 
+.btn-primary:hover
+{
+    border: 2px solid white;
+    outline: 2px solid #0d6efd;
+}
+
 /* banner with bg-image */
 .jumbo_content
 {
@@ -56,6 +62,12 @@ a
     color: #fff;
     background-color: #cd3d0f;
     border-color: #cd3d0f;
+}
+
+.btn_orange:hover
+{
+    border: 2px solid black;
+    outline: 2px solid #cd3d0f;
 }
 
 /* banner with 2 cols */
@@ -82,17 +94,16 @@ a
     display: block;
 }
 
-.btn_orange
-{
-    color: #fff;
-    background-color: #cd3d0f;
-    border-color: #cd3d0f;
-}
 
 /* HEADER */
 header
 {
     font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
 }
 
 /* header top */
@@ -111,6 +122,7 @@ header
 /* header bottom */
 .header_bottom
 {
+    background-color: white;
     padding: 1rem 1.5rem;
 }
 
@@ -134,10 +146,17 @@ header
     width: 25px;
 }
 
+.btn-dark:hover
+{
+    border: 2px solid white;
+    outline: 2px solid black;
+}
+
 /* MAIN */
 /* jumbotron */
 .ms_jumbotron
 {
+    margin-top: 120px;
     height: 550px;
     background-image: url('../img/jumbo-bg.png');
     background-size: cover;
@@ -285,6 +304,11 @@ header
     padding: 2rem;
 }
 
+.playstation_4 .ms_card
+{
+    height: 100%;
+}
+
 .playstation_4 .text_card p
 {
     color: gray;
@@ -309,6 +333,12 @@ header
     border-color: #d9dadc;
 }
 
+.btn_beige:hover
+{
+    outline: 2px solid  #d9dadc;
+    border: 2px solid black;
+}
+
 /* sales */
 .new_sales
 {
@@ -320,6 +350,12 @@ header
 {
     background-color: #161c3b;
     padding: 2rem 0;
+}
+
+.btn-light:hover
+{
+    outline: 2px solid white;
+    border: 2px solid black;
 }
 
 /* socials */
